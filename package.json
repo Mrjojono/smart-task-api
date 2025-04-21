@@ -1,0 +1,16 @@
+{
+  "name": "taskapi",
+  "version": "1.0.0",
+  "description": "an api for manage task , contacts and agenda",
+  "license": "ISC",
+  "author": "Joan",
+  "type": "commonjs",
+  "main": "./api/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --watch index.js"
+  },
+  "dependencies": {
+    "router": "^2.2.0"
+  }
+}
