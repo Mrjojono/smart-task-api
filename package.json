@@ -11,6 +11,12 @@
     "start": "node --watch index.js"
   },
   "dependencies": {
+    "@handlebars/allow-prototype-access": "^1.0.5",
+    "body-parser": "^2.2.0",
+    "express": "^5.1.0",
+    "express-handlebars": "^8.0.1",
+    "handlebars": "^4.7.8",
+    "path": "^0.12.7",
     "router": "^2.2.0"
   }
 }

@@ -1,8 +1,17 @@
  const express = require('express');
 
+ const path = require('path')
+ const handlebars = require('handlebars');
+const exphdle = require('express-handlebars');
+const {allowInsecurePrototypeAccess} = require('@handlebars/allow-prototype-access');
+const bodyparser = require('body-parser');
+
+
+
+
  const app = express();
  app.use(express.json());
- app.use(express.urlencoded({extended:true})); // for parsing application/x-www-form-urlencoded
+ app.use(express.urlencoded({extended:true})); 
 
  app.use('/api',require('./routes/tasks')); 
 

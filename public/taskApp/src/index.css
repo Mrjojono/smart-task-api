@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+body{
+    @apply bg-zinc-950 backdrop-blur-2xl;
+}
+
+.navlist{
+    @apply  justify-center mt-auto mb-auto text-gray-200 font-bold;
+}
+
+.navlist li{
+   @apply cursor-pointer hover:text-black;
+}
+
+.Hero-home{
+    @apply ml-auto mr-auto w-2xl text-center mt-60 text-white border-b-1 border-t-1 border-gray-100 p-4;
+    font-size: 20px;
+
+}
+.btn{
+    @apply inline-block bg-green-900 p-3 mt-10 rounded-lg hover:bg-green-800;
+}
+.Todo{
+    @apply bg-gray-900  ml-auto mr-auto mt-20 mb-20 flex flex-row rounded-2xl;
+    width: 880px;
+    height: 600px;
+}
+.logo{
+    @apply bg-green-900 p-3 h-20 flex w-40 flex-row gap-2  ;
+    border-top-left-radius: 20px; 
+}
+
+.side-btn{
+    @apply bg-gray-900 w-full p-1.5  text-white cursor-pointer  text-start flex flex-row gap-2 ;
+}
+.side-btn-click{
+    @apply bg-gray-800 w-full p-1.5  text-white  cursor-pointer text-start flex flex-row gap-2  ;
+}
+
+.main{
+    @apply flex flex-col w-full;
+}
+.header{
+    @apply border-b-1 border-black h-20 text-2xl text-white w-[100%] flex flex-row justify-between items-center ;
+}
+
+.header span{
+    @apply ml-5  mt-5;
+}
+
