@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const task = require('../data/task.js');
+const Client = require('../data/client.js');
 
 router.get("/hello", (req, res) => {
     res.send("Task API");
@@ -22,6 +23,10 @@ router.post('/add',(req,res)=>{
 
 router.get("/getTask",(req,res)=>{
     res.status(200).json(task);
+})
+
+router.get('cre/', (req,res)=>{
+    
 })
 
 router.get("/tasks/:id",(req,res)=>{
